@@ -20,6 +20,10 @@ func main() {
 		} else {
 			menit = -1 * menit
 		}
+	} else if (h1 > h2) && ((h2 + 12) - h1 == 1) {
+		time = (60 - m1) + m2
+        jam = time / 60
+        menit = time % 60
 	} else if (h1 > h2) {
 		jam = (h2 + 12) - h1 
 		menit = m1 - m2
